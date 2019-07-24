@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnicalcClientLib::DoNotTouchItInYourProgram::UCMainWindow</class>
+ <widget class="QMainWindow" name="UnicalcClientLib::DoNotTouchItInYourProgram::UCMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="logo.qrc">
+    <normaloff>:/res/Images/iis_logo_small.png</normaloff>:/res/Images/iis_logo_small.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>827</width>
+         <height>483</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>843</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="infoMenu">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="actionOpenUserGuide"/>
+    <addaction name="actionOpenAbout"/>
+   </widget>
+   <widget class="QMenu" name="changeModelMenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="loadExampleSubmenu">
+     <property name="title">
+      <string>Загрузить пример модели</string>
+     </property>
+    </widget>
+    <addaction name="actionMewModel"/>
+    <addaction name="actionLoadFromDisk"/>
+    <addaction name="loadExampleSubmenu"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="settingsMenu">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="actionChangeServer"/>
+    <addaction name="actionOpenSettings"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Действия</string>
+    </property>
+    <addaction name="actionCalculate"/>
+    <addaction name="actionViewUniFile"/>
+   </widget>
+   <addaction name="changeModelMenu"/>
+   <addaction name="menu"/>
+   <addaction name="settingsMenu"/>
+   <addaction name="infoMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMewModel"/>
+   <addaction name="actionLoadFromDisk"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionCalculate"/>
+   <addaction name="actionViewUniFile"/>
+  </widget>
+  <action name="actionMewModel">
+   <property name="icon">
+    <iconset theme="document-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Новая модель</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить модель</string>
+   </property>
+  </action>
+  <action name="actionLoadFromDisk">
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Загрузить модель</string>
+   </property>
+  </action>
+  <action name="actionChangeServer">
+   <property name="icon">
+    <iconset theme="preferences-system-network">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Сменить сервер</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="actionOpenSettings">
+   <property name="icon">
+    <iconset theme="preferences-other">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки задачи</string>
+   </property>
+  </action>
+  <action name="actionOpenUserGuide">
+   <property name="icon">
+    <iconset theme="system-help">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Руководство пользователя</string>
+   </property>
+  </action>
+  <action name="actionOpenAbout">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="actionCalculate">
+   <property name="icon">
+    <iconset theme="system-run">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Считать</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset theme="document-save-as">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить модель как</string>
+   </property>
+  </action>
+  <action name="actionViewUniFile">
+   <property name="icon">
+    <iconset theme="text-x-generic">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Просмотор .&amp;uni файла модели</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>updateDefaultTemperature(double)</slot>
+  <slot>updateMonth(int)</slot>
+  <slot>updateParametr(QString)</slot>
+  <slot>calculate()</slot>
+ </slots>
+</ui>

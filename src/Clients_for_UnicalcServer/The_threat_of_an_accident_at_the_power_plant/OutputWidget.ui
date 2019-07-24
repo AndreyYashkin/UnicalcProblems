@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OutputWidget</class>
+ <widget class="QWidget" name="OutputWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Результаты вычислений</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Объемы производства энергоресурсов</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QToolButton" name="aToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Объемы потребления энергоресурсов</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QToolButton" name="bToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Объемы энергоресурсов, поставляемых потребителям </string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QToolButton" name="ixToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Объемы энергоресурсов в резервных хранилищах</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QToolButton" name="iuToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QToolButton" name="ifToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Приоритеты связей между потребителями и пунктами резервного хранения</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Вероятности аварии у производителей ресурсов</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QToolButton" name="ipToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Количество производителей</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Количество потребителей</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Количество резервных хранилищ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="t">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="n">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="m">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>aToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OutputWidget</receiver>
+   <slot>onOpenDisplayTableDialogPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>563</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>681</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ipToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OutputWidget</receiver>
+   <slot>onOpenDisplayTableDialogPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>662</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OutputWidget</receiver>
+   <slot>onOpenDisplayTableDialogPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>248</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>635</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ixToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OutputWidget</receiver>
+   <slot>onOpenDisplayTableDialogPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>563</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>iuToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OutputWidget</receiver>
+   <slot>onOpenDisplayTableDialogPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>662</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ifToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OutputWidget</receiver>
+   <slot>onOpenDisplayTableDialogPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>572</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>664</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onOpenDisplayTableDialogPushed()</slot>
+ </slots>
+</ui>

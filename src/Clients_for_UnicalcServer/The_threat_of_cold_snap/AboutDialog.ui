@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1156</width>
+    <height>278</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>О программе</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="logo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>130</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/res/Images/iis_logo_small.png&quot; width=&quot;200&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;(Логотип  © ИСИ СО РАН)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Клиент задачи &lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Угроза похолодания&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Данная программа является частью &lt;a href=&quot;https://uniserv.iis.nsk.su/threats/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;СППР&lt;/span&gt;&lt;/a&gt;, разработаной в рамках гранта РФФИ (проект №16-07-00569) в лаборатории исскуственного интелекта ИСИ СО РАН.&lt;/p&gt;&lt;p&gt;© Яшкин А. В. &amp;lt;andreyyashkin@gmail.com&amp;gt;, разработчик программы, 2019&lt;/p&gt;&lt;p&gt;Данная программа распространяется под свободной лицензией &lt;a href=&quot;https://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;MIT&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Исходный код: &lt;a href=&quot;https://uniserv.iis.nsk.su/threats-files/src/threats_src.tar.gz&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#2980b9;&quot;&gt;https://uniserv.iis.nsk.su/threats-files/src/threats_src.tar.gz&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="openExternalLinks">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Закрыть</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

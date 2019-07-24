@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>Images/iis_logo_small.png</file>
+        <file>Images/iis_logo.png</file>
+    </qresource>
+</RCC>

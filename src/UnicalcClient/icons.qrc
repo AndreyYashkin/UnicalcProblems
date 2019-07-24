@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Images/menu icons for web/about.png</file>
+        <file>Images/menu icons for web/calcuate.png</file>
+        <file>Images/menu icons for web/connect.png</file>
+        <file>Images/menu icons for web/exit.png</file>
+        <file>Images/menu icons for web/help.png</file>
+        <file>Images/menu icons for web/new.png</file>
+        <file>Images/menu icons for web/open.png</file>
+        <file>Images/menu icons for web/save.png</file>
+        <file>Images/menu icons for web/saveAs.png</file>
+        <file>Images/menu icons for web/settings.png</file>
+        <file>Images/menu icons for web/viewUni.png</file>
+    </qresource>
+</RCC>
